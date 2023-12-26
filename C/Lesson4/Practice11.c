@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int x = 0, y = 0, m, n, k;
-void hasel(int);
+int hasel(int);
 
 int main() {
     int Vorodi;
@@ -11,12 +11,12 @@ int main() {
     return 0;
 }
 
-void hasel(int Vorodi) {
+int hasel(int Vorodi) {
     m = x + y;
     if(k == 1) {
         m--;
     }
-    printf("%d\n", m);
+    printf("%d ", m);
     n = x + m;
     k = n;
     x = y;

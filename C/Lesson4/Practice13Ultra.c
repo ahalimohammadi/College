@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void hasel(void);
+int hasel(void);
 int value, x = 1, n;
 float Total = 0, Average;
 
@@ -14,7 +14,7 @@ int main() {
     return 0;
 }
 
-void hasel(void) {
+int hasel(void) {
     float num;
     printf("Please enter %d float number: ", x);
     scanf("%f", &num);
