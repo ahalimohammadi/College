@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-void hasel(int);
-int Vorodi;
+int entry;
+void result(int);
 
 int main() {
     printf("Please enter a integer number: ");
-    scanf("%d", &Vorodi);
-    hasel(Vorodi);
+    scanf("%d", &entry);
+    result(entry);
     return 0;
 }
 
-void hasel(int x) {
+void result(int x) {
     printf("%d\n", x);
     if(x > 0) {
         x--;
-        hasel(x);
+        result(x);
     }
 }

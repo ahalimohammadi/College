@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int x = 0, y = 0, m, n, k;
-int hasel(int);
+void result(int);
 
 int main() {
     int Vorodi;
     printf("How many Fibonacci numbers are shown? ");
     scanf("%d", &Vorodi);
-    hasel(Vorodi);
+    result(Vorodi);
     return 0;
 }
 
-int hasel(int Vorodi) {
+void result(int Vorodi) {
     m = x + y;
     if(k == 1) {
         m--;
@@ -26,6 +26,6 @@ int hasel(int Vorodi) {
     }
     Vorodi--;
     if(Vorodi > 0) {
-        hasel(Vorodi);
+        result(Vorodi);
     }
 }
