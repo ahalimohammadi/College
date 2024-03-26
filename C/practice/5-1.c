@@ -2,7 +2,7 @@
 
 int main() {
     const int n = 5;
-    float ave[n], amax = 0;
+    float ave[n], amax;
     int i, p;
     for(i = 0; i < n; i++) {
         printf("Enter an average: ");

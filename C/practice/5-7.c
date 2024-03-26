@@ -12,9 +12,9 @@ int main() {
     scanf("%d", &no);
     bubble(st, k);
     if(bsearch(st, k, no) == -1) {
-        printf("\n number %d not exist in list ", no);
+        printf("\nNumber %d not exist in list ", no);
     } else {
-        printf("\n number %d exist in list.", no);
+        printf("\nNumber %d exist in list.", no);
     }
     return 0;
 }
@@ -43,7 +43,7 @@ int bsearch(int st[], int len, int no) {
 
 void bubble(int st[], int len) {
     int i, j, item;
-    for(i = len - 1; i > 0; i -- ) {
+    for(i = len - 1; i > 0; i --) {
         for(j = 0; j < i; j++) {
             if(st[j] > st[i + 1]) {
                 item = st[i] ;

@@ -10,12 +10,12 @@ int main() {
         printf("\nEnter a number: ") ;
         scanf("%d", &num);
         if(prime(num)) {
-            printf("Number %d is prime.", num);
+            printf("\nNumber %d is prime.", num);
         } else {
-            printf("Number %d is not prime.", num);
+            printf("\nNumber %d is not prime.", num);
         }
         printf("\nDo you want to continue?(y/n):");
-        ans = getche();
+        ans = getch();
         if(ans != 'y') {
             break;
         }
@@ -25,7 +25,7 @@ int main() {
 
 int prime(int num) {
     int i, temp = 1;
-    for(i = 2; (i <= num / 2) && temp ; i++) {
+    for(i = 2; (i <= num / 2) && temp; i++) {
         if(num % i == 0) {
             temp = 0;
         }
